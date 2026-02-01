@@ -1,0 +1,14 @@
+---
+name: "Example Add-on"
+description: "Ein Beispiel-Add-on als Vorlage für eigene Entwicklungen"
+version: "0.0.2"
+slug: "example-addon"
+image: "ghcr.io/helix-git/{arch}-example-addon"
+init: false
+arch:
+  - aarch64
+  - amd64
+ingress: true
+ingress_entry: /
+homeassistant_api: true
+auth_api: true
