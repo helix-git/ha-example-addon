@@ -9,6 +9,8 @@ name: Build
       - ".github/**"
       - "*.md"
       - ".gitignore"
+      - "docs/**"
+      - "LICENSE"
   release:
     types:
       - published
