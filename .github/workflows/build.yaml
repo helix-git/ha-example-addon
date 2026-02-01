@@ -5,6 +5,10 @@ name: Build
   push:
     branches:
       - main
+    paths-ignore:
+      - ".github/**"
+      - "*.md"
+      - ".gitignore"
   release:
     types:
       - published
