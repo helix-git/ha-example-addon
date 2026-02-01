@@ -10,5 +10,5 @@ arch:
   - amd64
 ingress: true
 ingress_entry: /
-homeassistant_api: true
+homeassistant_config: true
 auth_api: true

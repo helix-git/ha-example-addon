@@ -8,7 +8,11 @@ RUN \
     apk add --no-cache \
         bash \
         python3 \
-        py3-pip
+        py3-pip \
+        gcc \
+        musl-dev \
+        python3-dev \
+        libffi-dev
 
 # Copy app directory
 COPY app /app/
