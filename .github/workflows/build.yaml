@@ -27,9 +27,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6.0.2
 
+      # home-assistant/actions hat keine Releases, daher Commit-SHA pinning
       - name: Get add-on information
         id: info
-        uses: home-assistant/actions/helpers/info@master
+        uses: home-assistant/actions/helpers/info@55b4a5d23e09d627c2773c2ef82afa98904d65b4
         with:
           path: "./"
 
@@ -50,7 +51,6 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build add-on
         if: steps.check.outputs.build == 'true'
