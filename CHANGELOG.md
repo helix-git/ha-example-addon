@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/helix-git/ha-example-addon/compare/v0.1.3...v0.1.4) (2026-02-02)
+
+
+### Bug Fixes
+
+* Consolidate build into release workflow for automatic triggering ([6eb26dd](https://github.com/helix-git/ha-example-addon/commit/6eb26dd5a7d38628dd9f3ccdc500b6df8dccdb1a))
+
 ## [0.1.3](https://github.com/helix-git/ha-example-addon/compare/v0.1.2...v0.1.3) (2026-02-02)
 
 
