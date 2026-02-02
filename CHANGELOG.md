@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/helix-git/ha-example-addon/compare/v1.0.3...v1.0.4) (2026-02-02)
+
+
+### Bug Fixes
+
+* comment punctuation in Dockerfile ([d31ce6e](https://github.com/helix-git/ha-example-addon/commit/d31ce6e5ad7afb05b8e2e6c880722e0c27972ab9))
+
 ## [1.0.3](https://github.com/helix-git/ha-example-addon/compare/v1.0.2...v1.0.3) (2026-02-02)
 
 
