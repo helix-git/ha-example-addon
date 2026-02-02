@@ -26,3 +26,20 @@ jobs:
           release-type: simple
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
+
+      - name: Checkout
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/checkout@v4
+        with:
+          ref: latest
+
+      - name: Update version in config.yaml
+        if: ${{ steps.release.outputs.release_created }}
+        run: |
+          VERSION="${{ steps.release.outputs.version }}"
+          sed -i "s/^version:.*/version: ${VERSION}/" config.yaml
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add config.yaml
+          git commit -m "chore: Update config.yaml to ${VERSION}"
+          git push
