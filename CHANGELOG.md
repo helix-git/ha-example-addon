@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/helix-git/ha-example-addon/compare/v0.1.1...v0.1.2) (2026-02-02)
+
+
+### Bug Fixes
+
+* Use block syntax for release-please version marker ([2671bf5](https://github.com/helix-git/ha-example-addon/commit/2671bf53e0b49702e00abc95feaa10fafaf45586))
+
 ## [0.1.1](https://github.com/helix-git/ha-example-addon/compare/v0.1.0...v0.1.1) (2026-02-02)
 
 
