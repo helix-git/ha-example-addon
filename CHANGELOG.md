@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/helix-git/ha-example-addon/compare/v1.0.1...v1.0.2) (2026-02-02)
+
+
+### Bug Fixes
+
+* Update dispatch URL to haos-apps ([a39245c](https://github.com/helix-git/ha-example-addon/commit/a39245cce1c353b4caa9bf68b9c3ee91819e50d5))
+
 ## [1.0.1](https://github.com/helix-git/ha-example-addon/compare/v1.0.0...v1.0.1) (2026-02-02)
 
 
