@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benutzerprofil Seite</title>
+    <style>
+        :root {
+            /* Fallback variables */
+            --primary-text-color: #212121;
+            --primary-background-color: #fafafa;
+            --secondary-text-color: #727272;
+            --divider-color: #e0e0e0;
+            --accent-color: #03a9f4;
+            --error-color: #db4437;
+            --card-background-color: #ffffff;
+        }
+
+        /* Basic dark mode support if HA doesn't inject variables */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-text-color: #e1e1e1;
+                --primary-background-color: #111111;
+                --secondary-text-color: #9b9b9b;
+                --divider-color: #2f2f2f;
+                --card-background-color: #1c1c1c;
+            }
+        }
+
+        body {
+            font-family: Roboto, "Helvetica Neue", sans-serif;
+            background-color: var(--primary-background-color);
+            color: var(--primary-text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+
+        .card {
+            background-color: var(--card-background-color);
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            border: 1px solid var(--divider-color);
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 24px;
+            border: 4px solid var(--accent-color);
+        }
+
+        .profile-initials {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: var(--divider-color);
+            color: var(--secondary-text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            margin: 0 auto 24px auto;
+            border: 4px solid var(--accent-color);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0 0 8px 0;
+            font-weight: 500;
+        }
+
+        p {
+            color: var(--secondary-text-color);
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .error {
+            color: var(--error-color);
+            border: 1px solid var(--error-color);
+            padding: 16px;
+            border-radius: 8px;
+            background-color: rgba(219, 68, 55, 0.1);
+        }
+
+        .user-id {
+            font-size: 0.8em;
+            margin-top: 16px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        {% if user %}
+            {% if user.picture %}
+                <img src="{{ user.picture }}" alt="{{ user.name }}" class="profile-image">
+            {% else %}
+                <div class="profile-initials">
+                    {{ user.name[0] | upper }}
+                </div>
+            {% endif %}
+
+            <p>Eingeloggt als:</p>
+            <h1>{{ user.name }}</h1>
+        {% elif error %}
+            <div class="error">
+                <h3>Fehler</h3>
+                <p>{{ error }}</p>
+            </div>
+        {% else %}
+            <p>Laden...</p>
+        {% endif %}
+    </div>
+
+</body>
+</html>
