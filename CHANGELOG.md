@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/helix-git/ha-example-addon/compare/v1.0.0...v1.0.1) (2026-02-02)
+
+
+### Bug Fixes
+
+* Use generic replacer for version in config.yaml ([d41d69c](https://github.com/helix-git/ha-example-addon/commit/d41d69ce56a1d253092de2cd2999da6c4822a76f))
+
 ## 1.0.0 (2026-02-02)
 
 
