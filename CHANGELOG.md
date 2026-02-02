@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.5](https://github.com/helix-git/ha-example-addon/compare/v0.1.4...v0.1.5) (2026-02-02)
+
+
+### Bug Fixes
+
+* Add branch to dispatch payload for sync ([9ccf9aa](https://github.com/helix-git/ha-example-addon/commit/9ccf9aa0bb0349d0a3496132f4e3e7f7bce5e539))
+* Update docstring for get_person_entity function ([de2dc42](https://github.com/helix-git/ha-example-addon/commit/de2dc42e3a5ffd688ad852f4e33acc29ed3a60bc))
+
 ## [0.1.4](https://github.com/helix-git/ha-example-addon/compare/v0.1.3...v0.1.4) (2026-02-02)
 
 
