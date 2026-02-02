@@ -2,7 +2,7 @@ ARG BUILD_FROM
 # hadolint ignore=DL3006
 FROM $BUILD_FROM
 
-# Install requirements
+# Install requirements.
 # hadolint ignore=DL3018
 RUN \
     apk add --no-cache \
