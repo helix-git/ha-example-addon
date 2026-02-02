@@ -113,5 +113,6 @@ jobs:
             {
               "app": "example-addon",
               "version": "${{ needs.release-please.outputs.version }}",
+              "branch": "latest",
               "repo": "${{ github.repository }}"
             }
