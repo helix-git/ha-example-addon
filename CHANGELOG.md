@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/helix-git/ha-example-addon/compare/v0.1.5...v0.2.0) (2026-02-02)
+
+
+### Features
+
+* Update title from 'Benutzerprofil Seite' to 'Benutzerprofil' ([3489511](https://github.com/helix-git/ha-example-addon/commit/3489511fc58808079b9d9892e76ad6ca53787f96))
+
 ## [0.1.5](https://github.com/helix-git/ha-example-addon/compare/v0.1.4...v0.1.5) (2026-02-02)
 
 
