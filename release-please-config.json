@@ -7,9 +7,8 @@
       "bump-patch-for-minor-pre-major": true,
       "extra-files": [
         {
-          "type": "yaml",
-          "path": "config.yaml",
-          "jsonpath": "$.version"
+          "type": "generic",
+          "path": "config.yaml"
         }
       ],
       "changelog-path": "CHANGELOG.md",
