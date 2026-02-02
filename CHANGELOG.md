@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0 (2026-02-02)
+
+
+### Bug Fixes
+
+* title in index.html to 'Benutzerprofil Seite' ([8fbc267](https://github.com/helix-git/ha-example-addon/commit/8fbc267d0ef55e1b9a886dc6c7bbbbfc56918cc9))
+
 ## [1.0.1](https://github.com/helix-git/ha-example-addon/compare/v1.0.0...v1.0.1) (2026-02-02)
 
 
