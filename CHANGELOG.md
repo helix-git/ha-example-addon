@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.3](https://github.com/helix-git/ha-example-addon/compare/v1.0.2...v1.0.3) (2026-02-02)
+
+
+### Bug Fixes
+
+* docstring formatting in get_person_entity ([e2dded5](https://github.com/helix-git/ha-example-addon/commit/e2dded50cf6424cfb37f507644e5263f02826485))
+* secondary text color from [#727272](https://github.com/helix-git/ha-example-addon/issues/727272) to [#626262](https://github.com/helix-git/ha-example-addon/issues/626262) ([e35fb7e](https://github.com/helix-git/ha-example-addon/commit/e35fb7e057c4991013859842fe958c91e2b972a3))
+* secondary text color from [#727272](https://github.com/helix-git/ha-example-addon/issues/727272) to [#626262](https://github.com/helix-git/ha-example-addon/issues/626262) ([352f8fc](https://github.com/helix-git/ha-example-addon/commit/352f8fc6bd8b0a2dd8daa0f216ee6563053c3208))
+
 ## [1.0.2](https://github.com/helix-git/ha-example-addon/compare/v1.0.1...v1.0.2) (2026-02-02)
 
 
