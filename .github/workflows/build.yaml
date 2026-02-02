@@ -78,7 +78,7 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.DISPATCH_TOKEN }}
-          repository: ${{ github.repository_owner }}/ha-add-on
+          repository: ${{ github.repository_owner }}/haos-apps
           event-type: app-updated
           client-payload: |
             {
