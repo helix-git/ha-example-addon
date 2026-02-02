@@ -1,9 +1,7 @@
 ---
 name: "Example Add-on"
 description: "Ein Beispiel-Add-on als Vorlage für eigene Entwicklungen"
-# x-release-please-start-version
-version: "0.1.0"
-# x-release-please-end
+version: 0.1.2  # x-release-please-version
 slug: "example-addon"
 image: "ghcr.io/helix-git/ha-example-addon/{arch}"
 init: false
