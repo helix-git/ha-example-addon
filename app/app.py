@@ -9,7 +9,7 @@ CORE_API_URL = "http://supervisor/core/api"
 
 
 def get_person_entity(user_id, headers):
-    """Find person entity matching the user_id and get entity_picture."""
+    """Find person entity matching the user_id and get entity_picture"""
     try:
         response = requests.get(
             f"{CORE_API_URL}/states",
